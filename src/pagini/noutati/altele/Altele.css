@@ -1,0 +1,65 @@
+.termeni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+  margin-top: 2500px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.transport{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+  margin-top: 350px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.desprenoi{
+  position: relative;
+}
+.scr{
+  position: absolute;
+  top: 53.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+.imagine{
+width: 100%;
+z-index: 1;
+height: 100%;
+float: inline-end;
+shape-outside: ellipse(50% 50%);
+}
+.prelucrare-date{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+  margin-top: 1600px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.cookies{
+   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+  margin-top: 1000px;
+  margin-left: 300px;
+  margin-right: 300px;
+}

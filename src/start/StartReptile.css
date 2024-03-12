@@ -1,0 +1,52 @@
+.imagine-container-reptile {
+  position: relative;
+  background-color: rgb(16, 36, 13);
+  height:1200px;
+}
+
+.imagine-reptile {
+  position: relative;
+  display: grid;
+  place-items: center;
+    top: 150px;
+}
+.img-soparla{
+  display: block;
+  width: 1100px;
+  height: 900px;
+}
+
+
+.text-reptile {
+  position: absolute;
+  top: 110px;
+  left: 430px;
+  padding: 0;
+  margin-left: 20px;
+  color: white;
+  opacity: 10%;
+  font-size: 220px;
+  font-family: "Belleza";
+}
+.container-reptile {
+  position: absolute;
+  bottom: 70px;
+  left: 600px;
+  z-index: 1;
+}
+.claws{
+    color: darkgreen; 
+  position: absolute;
+  bottom: 600px;
+  right: 130px;
+  transform: translate(50%, 50%) rotate(-90deg);
+
+}
+.reptile-claws{
+    color: darkgreen; 
+  position: absolute;
+  bottom: 600px;
+  left: -570px;
+  transform: translate(50%, 50%) rotate(-90deg);
+
+}

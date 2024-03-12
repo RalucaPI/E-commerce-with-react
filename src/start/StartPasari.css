@@ -1,0 +1,37 @@
+.tot-container-pasari {
+  position: relative;
+}
+
+.imag-pasare {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container-pasari {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+.duck-walking{
+    position: absolute;
+    bottom: 320px;
+    right: 70px;
+}
+.duck-track{
+    position: absolute;
+    opacity: 50%;
+    top: 0;
+    left: -50px;
+}
+.bird-track{
+    position: absolute;
+    opacity: 50%;
+    top: 0;
+    right:-60px;
+}
+.bird-track-two{
+    position: absolute;
+    opacity: 50%;
+    top: 0;
+    right:430px;
+}

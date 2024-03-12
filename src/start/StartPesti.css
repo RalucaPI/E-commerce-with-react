@@ -1,0 +1,25 @@
+.imagine-container-pesti {
+  position: relative;
+}
+
+.imagine-pesti {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container-pesti {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -20px;
+  margin-left: 10px;
+  z-index: 1;
+}
+.bubble{
+  position: absolute;
+  bottom: 0;
+}
+.bubble-two{
+    width: 1500px;
+    height: 950px;
+}

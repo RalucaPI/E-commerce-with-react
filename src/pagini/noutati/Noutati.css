@@ -1,0 +1,45 @@
+.footer{
+  position: sticky;
+  color: rgb(12, 17, 20);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -80px;
+  background-attachment: fixed;
+  text-decoration: none !important;
+}
+.scris {
+  margin-right: auto;
+  max-width: 300px;
+  padding: 20px;
+  z-index: 2;
+  background-color: rgba(244, 239, 239, 0.326);
+ 
+}
+
+.scris h2 {
+  font-size: 24px;
+  margin-bottom: 70px;
+  color: #000;
+}
+
+.scris ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scris li {
+  margin-bottom: 20px;
+}
+.contact{ 
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-scris{
+  
+  margin-top: -300px;
+  align-items: center;
+  margin-right: 50px;
+}

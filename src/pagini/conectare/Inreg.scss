@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+$gutter: 18px;
+$sasha: #333;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background: #f6f6f6;
+}
+h1{
+  align-items: center;
+  text-align: center;
+}
+form {
+  width: 350px;
+  margin: 40px auto;
+  margin-bottom: 10px;
+
+  .form-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: $gutter * 2;
+    overflow: hidden;
+
+    &.active {
+      input {
+        color: #fff;
+      }
+     
+
+      label {
+        transform: translate3d(0, 0, 0);
+
+        span {
+          transform: scale(0.85);
+        }
+      }
+    }
+  }
+
+  input {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: $gutter * 0.75 $gutter;
+    color: $sasha;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $sasha;
+    z-index: 2;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  label {
+    position: relative;
+    transform: translate3d(0, -100%, 0);
+    transition: font-size 0.2s cubic-bezier(0.83, 0, 0.6, 1), transform 0.2s cubic-bezier(0.83, 0, 0.6, 1);
+    display: block;
+    padding: $gutter * 0.75 0;
+    font-size: 1.25em;
+    z-index: 1;
+
+    span {
+      position: relative;
+      display: inline-block;
+      transform: scale(1);
+      transition: transform 0.2s cubic-bezier(0.83, 0, 0.6, 1);
+      z-index: 2;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      transform: translate3d(0, -100%, 0);
+      transition: transform 0.2s cubic-bezier(0.83, 0, 0.6, 1);
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $sasha;
+      content: '';
+    }
+  }
+}

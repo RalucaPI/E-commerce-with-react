@@ -1,0 +1,414 @@
+
+.checkout{
+    align-items: center;
+    max-height: 750px;
+}
+.animatie-card {
+  top: -750px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+
+.confeti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.succes {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  z-index: 2;
+   --animate-delay: 4s;
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+  font-size: 50px; 
+}
+
+.title-word-1 {
+  --color-1: #da0000;
+  --color-2: #58e0ff;
+  --color-3: #2e0032;
+  padding-right: 15px;
+}
+
+.title-word-2 {
+  --color-1: #ff4141;
+  --color-2: #388eff;
+  --color-3: #560559;
+  padding-right: 15px;
+}
+
+.title-word-3 {
+  --color-1: #ff6a06;
+  --color-2: #3a0786;
+  --color-3: #590580;
+  padding-right: 15px;
+}
+
+.title-word-4 {
+  --color-1: #fcba2c;
+  --color-2: #600178;
+  --color-3: #7c009e;
+  padding-right: 15px;
+}
+
+.title-word-5 {
+  --color-1: #ffef09;
+  --color-2: #29053a;
+  --color-3: #a700d1;
+  padding-right: 15px;
+}
+
+.title-word-6 {
+  --color-1: #f8fb4a;
+  --color-2: #000000;
+  --color-3: #d53eff;
+}
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.text-succes{
+  display: grid;
+  height: 100vh;
+  z-index: 3;
+  padding-left: 30%;
+}
+
+
+
+.comanda-ram{ 
+  background: #009688;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+.loop-wrapper {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 1700px;
+  height: 672px;
+  overflow: hidden;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+.mountain {
+  position: absolute;
+  right: -900px;
+  bottom: -20px;
+  width: 2px;
+  height: 2px;
+  box-shadow: 
+    0 0 0 50px #4DB6AC,
+    60px 50px 0 70px #4DB6AC,
+    90px 90px 0 50px #4DB6AC,
+    250px 250px 0 50px #4DB6AC,
+    290px 320px 0 50px #4DB6AC,
+    320px 400px 0 50px #4DB6AC
+    ;
+  transform: rotate(130deg);
+  animation: mtn 20s linear infinite;
+}
+.hill {
+  position: absolute;
+  right: -900px;
+  bottom: -50px;
+  width: 400px;
+  border-radius: 50%;
+  height: 30px;
+  box-shadow: 
+    0 0 0 50px #4DB6AC,
+    -20px 0 0 20px #4DB6AC,
+    -90px 0 0 50px #4DB6AC,
+    250px 0 0 50px #4DB6AC,
+    290px 0 0 50px #4DB6AC,
+    620px 0 0 50px #4DB6AC;
+  animation: hill 4s 2s linear infinite;
+}
+.tree, .tree:nth-child(2), .tree:nth-child(3) {
+  position: absolute;
+  height: 100px; 
+  width: 35px;
+  bottom: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/tree.svg) no-repeat;
+}
+.rock {
+  margin-top: -17%;
+  height: 2%; 
+  width: 2%;
+  bottom: -2px;
+  border-radius: 20px;
+  position: absolute;
+  background: #ddd;
+}
+.truck, .wheels {
+  transition: all ease;
+  width: 85px;
+  margin-right: -60px;
+  bottom: 0px;
+  right: 50%;
+  position: absolute;
+  background: #eee;
+}
+.truck {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/truck.svg) no-repeat;
+  background-size: contain;
+  height: 60px;
+}
+.truck:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #fff,
+     -35px 18px 0 1.5px #fff;
+}
+.wheels {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/wheels.svg) no-repeat;
+  height: 15px;
+  margin-bottom: 0;
+}
+
+.tree  { animation: tree 3s 0.000s linear infinite; }
+.tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
+.tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
+.rock  { animation: rock 4s   -0.530s linear infinite; }
+.truck  { animation: truck 4s   0.080s ease infinite; }
+.wheels  { animation: truck 4s   0.001s ease infinite; }
+.truck:before { animation: wind 1.5s   0.000s ease infinite; }
+
+
+@keyframes tree {
+  0%   { transform: translate(1350px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree2 {
+  0%   { transform: translate(650px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree3 {
+  0%   { transform: translate(2750px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+
+@keyframes rock {
+  0%   { right: -200px; }
+  100% { right: 2000px; }
+}
+@keyframes truck {
+  0%   { }
+  6%   { transform: translateY(0px); }
+  7%   { transform: translateY(-6px); }
+  9%   { transform: translateY(0px); }
+  10%   { transform: translateY(-1px); }
+  11%   { transform: translateY(0px); }
+  100%   { }
+}
+@keyframes wind {
+  0%   {  }
+  50%   { transform: translateY(3px) }
+  100%   { }
+}
+@keyframes mtn {
+  100% {
+    transform: translateX(-2000px) rotate(130deg);
+  }
+}
+@keyframes hill {
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+
+.letter-image {
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	width: 200px;
+	height: 200px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.animated-mail {
+	position: absolute;
+	height: 150px;
+	width: 200px;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	transition: 0.4s;
+
+	.body {
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 200px 400px;
+		border-color: transparent transparent #33cc33 transparent;
+		z-index: 2;
+	}
+
+	.top-fold {
+		position: absolute;
+		top: -50px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 200px 200px 0 200px;
+		-webkit-transform-origin: 50% 0%;
+		-webkit-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+		-moz-transform-origin: 50% 0%;
+		-moz-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+		transform-origin: 50% 0%;
+		transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+		border-color: #009933 transparent transparent transparent;
+		z-index: 2;
+	}
+
+	.back-fold {
+		position: absolute;
+		bottom: 0;
+		width: 400px;
+		height: 200px;
+		background: #47d147;
+		z-index: 0;
+	}
+
+	.left-fold {
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 150px 0 50px 300px;
+		border-color: transparent transparent transparent #33cc33;
+		z-index: 2;
+	}
+
+	.letter {
+		left: 20px;
+		bottom: 0px;
+		position: absolute;
+		width: 350px;
+		height: 200px;
+		background: white;
+		z-index: 1;
+		overflow: hidden;
+		-webkit-transition: 0.4s 0.2s;
+		-moz-transition: 0.4s 0.2s;
+		transition: 0.4s 0.2s;
+
+		.letter-border {
+			height: 10px;
+			width: 100%;
+			background: repeating-linear-gradient(
+				-45deg,
+				#33cc33,
+				#009933 8px,
+				transparent 8px,
+				transparent 18px
+			);
+		}
+
+		.letter-title {
+			margin-top: 10px;
+			margin-left: 5px;
+			height: 20px;
+			width: 75%;
+			background: #009933;
+		}
+		.letter-context {
+			margin-top: 10px;
+			margin-left: 5px;
+			height: 20px;
+			width: 35%;
+			background: #cb5a5e;
+		}
+
+		.letter-stamp {
+			margin-top: 50px;
+			margin-left: 270px;
+			border-radius: 100%;
+			height: 30px;
+			width: 30px;
+			background: #cb5a5e;
+			opacity: 0.3;
+		}
+	}
+}
+
+.shadow {
+	position: absolute;
+	top: 200px;
+	left: 100%;
+	width: 700px;
+	height: 30px;
+	transition: 0.4s;
+	transform: translateX(-50%);
+	-webkit-transition: 0.4s;
+	-webkit-transform: translateX(-50%);
+	-moz-transition: 0.4s;
+	-moz-transform: translateX(-50%);
+
+	border-radius: 100%;
+	background: radial-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0)
+	);
+}
+
+.letter-image:hover {
+	.animated-mail {
+		transform: translateY(100px);
+		-webkit-transform: translateY(100px);
+		-moz-transform: translateY(100px);
+	}
+
+	.animated-mail .top-fold {
+		transition: transform 0.4s, z-index 0.2s;
+		transform: rotateX(180deg);
+		-webkit-transition: transform 0.4s, z-index 0.2s;
+		-webkit-transform: rotateX(180deg);
+		-moz-transition: transform 0.4s, z-index 0.2s;
+		-moz-transform: rotateX(180deg);
+		z-index: 0;
+	}
+
+	.animated-mail .letter {
+		height: 300px;
+	}
+
+	.shadow {
+		width: 0px;
+	}
+}
+
+
+
+
+

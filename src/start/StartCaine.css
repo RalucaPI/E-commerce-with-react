@@ -1,0 +1,39 @@
+.imagine-container-caine {
+  position: relative;
+  z-index: -1;
+}
+
+.imagine-caine {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.container-caine{
+  position: absolute;
+  bottom: 500px;
+  left: 300px;
+  margin-left: 10px;
+}
+
+.caine-zzz {
+  position: absolute;
+  top: -10px;
+  right:300px;
+}
+
+.zzz {
+  width: 250px;
+  height: 250px;
+}
+.caine-bubble{
+  position: absolute;
+  top: -50px;
+  left:250px;
+}
+
+.bubble-zzz {
+  width: 500px;
+  height: 500px;
+}

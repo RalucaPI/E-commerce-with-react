@@ -1,0 +1,70 @@
+.afisare-com{
+   background: url('./animale.png');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   padding: 20px; 
+}
+.comanda-ramb{
+   margin-top: 250px;
+   padding: 20px; 
+   margin-left: 550px;
+   margin-right: 540px;
+   border-radius: 10px; 
+   background-color: #f4e7c6;
+}
+.ramburs{
+   padding-bottom: 10px;
+}
+.comanda-card{
+   padding: 20px; 
+   margin-left: 550px;
+   margin-right: 540px;
+   border-radius: 10px; 
+   background-color: #f4e7c6;
+   margin-bottom: 200px;
+}
+.cardul{
+   padding-bottom: 10px;
+   font-size: 20px;
+}
+.titlu{
+   font-size: 20px;
+}
+.nume{
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+.title{
+   font-size: 20px;
+}
+.tip{
+   font-size: 25px;
+}
+.pret{
+   padding-bottom: 10px;
+
+}
+.cantitate{
+
+   padding-bottom: 10px;
+}
+.email{
+
+   padding-bottom: 10px;
+}
+.telefon{
+
+   padding-bottom: 10px;
+}
+.adresa{
+
+   padding-bottom: 10px;
+}
+.localitate{
+
+   padding-bottom: 10px;
+}
+.judet{
+
+   padding-bottom: 10px;
+}

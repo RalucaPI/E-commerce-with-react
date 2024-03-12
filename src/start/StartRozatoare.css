@@ -1,0 +1,76 @@
+.imagine-container-r{
+  position: relative;
+}
+
+.imagine-rozatoare {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container-rozatoare {
+  position: absolute;
+  bottom: 600px;
+  right:  900px;
+  margin-left: 10px;
+  z-index: 1;
+}
+.animatie-rozatoare{
+    position: absolute;
+    bottom: 915px;
+    left: 180px;
+}
+.iepure-gif{
+    width: 100px;
+}
+
+.text-rozatoare{
+  position: absolute;
+  bottom: 900px;
+  padding: 0;
+  margin-left: 500px;
+  color: rgb(2, 2, 2);
+  opacity: 7%;
+  font-size: 150px;
+  font-family: 'Asul';
+}
+.animatie-rozatoare2{
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+}
+.hamster-gif{
+    width: 130px;
+}
+.animatie-rozatoare-trei{
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+}
+.iepure2-gif{
+    width: 130px;
+}
+.animatie-rozatoare-4{
+    position: absolute;
+    bottom: 0;
+    left: 550px;
+}
+.quineea-gif{
+    width: 130px;
+}
+.animatie-rozatoare-5{
+    position: absolute;
+    bottom: 0;
+    left: 750px;
+}
+.veverita-gif{
+    width: 150px;
+}
+.animatie-rozatoare-6{
+    position: absolute;
+    bottom: 100px;
+    left: 990px;
+}
+.dihor-gif{
+    width: 150px;
+    height: 110px;
+}
